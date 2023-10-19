@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: url('resource/font.woff2') format('woff2-variations');
+}
+
+* {
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+	font-family: 'Pretendard Variable';
+	color: white;
+}
+
+body {
+	padding: 100px 10px 10px 10px;
+	background-color: #1A1C1E;
+	text-align: center;
+	vertical-align: middle;
+}
