@@ -5,14 +5,21 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Time Guessing - Kyungbock Mini Game</title>
+		<title>시간 맞추기 - 경복 미니 게임</title>
 		<link rel="icon" href="./resource/icon.ico" type="image/x-icon">
 	</head>
 	<body>
-		<header>시간 맞추기</header>
+		<header>
+			<div class="back">
+				<a href="./index.html">
+					<img src="./resource/icon-back.svg" alt="Go to the main homepage." width="32" height="32">
+				</a>
+			</div>
+		</header>
+		<div class="title">시간 맞추기</div>
 		<div class="buttons">
-			<button id="start" onclick="sclick()">시작</button>
-			<button id="stop"  onclick="eclick()">중지</button>
+			<button id="start" onclick="startclicked()">시작</button>
+			<button id="stop"  onclick="stopclicked()">중지</button>
 		</div>
 		<div id="result"></div>
 		<script src="js/game-guesstime.js" type="text/javascript"></script>

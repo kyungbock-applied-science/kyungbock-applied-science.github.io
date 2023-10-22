@@ -1,4 +1,34 @@
+body {
+	display: block;
+	text-align: center;
+}
+
 header {
+	display: flex;
+	height: 64px;
+	align-items: center;
+}
+
+.back {
+	display: inline-flex;
+	width: 64px;
+	height: 64px;
+	border-radius: 32px;
+	transition: all 0.2s ease;
+}
+
+.back:hover {
+	border-radius: 32px;
+	background-color: #FFFFFF1F;
+	transition: all 0.2s ease;
+}
+
+.back > a {
+	padding: 16px;
+}
+
+.title {
+	margin-top: 50px;
 	margin-bottom: 50px;
 	font-size: 48px;
 }

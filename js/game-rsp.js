@@ -1,6 +1,6 @@
 const restxt = document.getElementById("result");
 
-function sclick()
+function scissorclicked()
 {
 	var rsp = Math.floor(Math.random() * 3);
 	if      (rsp == 0) { restxt.innerText = "AI: 가위, 결과: 무승부"; }
@@ -8,7 +8,7 @@ function sclick()
 	else               { restxt.innerText = "AI: 보, 결과: 승리"; }
 }
 
-function rclick()
+function rockclicked()
 {
 	var rsp = Math.floor(Math.random() * 3);
 	if      (rsp == 0) { restxt.innerText = "AI: 가위, 결과: 승리"; }
@@ -16,7 +16,7 @@ function rclick()
 	else               { restxt.innerText = "AI: 보, 결과: 패배"; }
 }
 
-function pclick()
+function paperclicked()
 {
 	var rsp = Math.floor(Math.random() * 3);
 	if      (rsp == 0) { restxt.innerText = "AI: 가위, 결과: 패배"; }

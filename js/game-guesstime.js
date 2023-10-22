@@ -1,24 +1,24 @@
-const sttbtn = document.getElementById("start");
-const stpbtn = document.getElementById("stop");
-const restxt = document.getElementById("result");
+const startbtn = document.getElementById("start");
+const stopbtn = document.getElementById("stop");
+const resulttxt = document.getElementById("result");
 
-var stime = 0;
-var etime = 0;
+var timeStarted = 0;
+var timeStopped = 0;
 
-function sclick()
+function startclicked()
 {
-	stime = Date.now();
-	sttbtn.disabled = true;
-	stpbtn.disabled = false;
+	timeStarted = Date.now();
+	startbtn.disabled = true;
+	stopbtn.disabled = false;
 
-	restxt.innerText = "속으로 10 초를 센 뒤 중지 단추를 누릅니다.";
+	resulttxt.innerText = "속으로 10 초를 센 뒤 중지 단추를 누릅니다.";
 }
 
-function eclick()
+function stopclicked()
 {
-	etime = Date.now() - stime;
-	sttbtn.disabled = false;
-	stpbtn.disabled = true;
+	timeStopped = Date.now() - timeStarted;
+	startbtn.disabled = false;
+	stopbtn.disabled = true;
 
-	restxt.innerText = Math.ceil(etime / 10) / 100 + " 초 걸렸습니다. 오차: " + Math.abs(Math.ceil(etime / 10) / 100 - 10) + " 초";
+	resulttxt.innerText = Math.ceil(timeStopped / 10) / 100 + " 초 걸렸습니다. 오차: " + Math.ceil(Math.abs(timeStopped / 1000 - 10) * 100) / 100 + " 초";
 }
