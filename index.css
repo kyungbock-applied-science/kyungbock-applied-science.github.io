@@ -1,3 +1,7 @@
+body {
+	padding-bottom: 100px;
+}
+
 header {
 	margin-bottom: 40px;
 }
@@ -29,19 +33,30 @@ header > img {
 	margin: 10px 0px;
 	background-color: #212529;
 	border-radius: 20px;
+	color: #FFFFFF3F;
+	font-size: 24px;
+	font-weight: bold;
+	transition: all 0.2s ease;
+}
+
+.games td:not(.disabled) {
+	margin: 10px 0px;
+	background-color: #212529;
+	border-radius: 20px;
 	box-shadow: 0px 0px 4px 0px #0000003F;
 	font-size: 24px;
 	font-weight: bold;
 	transition: all 0.2s ease;
 }
 
-.games td:hover {
+.games td:not(.disabled):hover {
 	box-shadow: 0px 2px 6px 2px #0000003F;
 	transition: all 0.2s ease;
 }
 
 .games td a {
 	text-decoration-line: none;
+	transition: all 0.2s ease;
 }
 
 .games td a:hover {
